@@ -3,7 +3,7 @@ node {
 		git "https://gitlab.com/mbabilo/experitest"
 		}
 	stage ('Build'){
-		echo "Build stage"
+		echo " START Build stage"
     	dir("comtest") {
 	   bat "mvn clean install"
        }
