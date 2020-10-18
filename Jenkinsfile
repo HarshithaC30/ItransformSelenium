@@ -1,5 +1,6 @@
 node {
 	stage ('SCM checkout'){
+		echo "Checkout"
 		git "https://github.com/HarshithaC30/ItransformSelenium"
 		}
 	stage ('Build'){
