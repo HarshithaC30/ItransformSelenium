@@ -3,7 +3,7 @@ node {
 		git "https://github.com/HarshithaC30/ItransformSelenium"
 		}
 	stage ('Build'){
-		echo " START Build stage"
+		echo " START Build stage..."
     	dir("comtest") {
 	   bat "mvn clean install"
        }
