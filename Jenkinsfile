@@ -1,6 +1,6 @@
 node {
 	stage ('SCM checkout'){
-		git "https://gitlab.com/mbabilo/experitest"
+		git "https://github.com/HarshithaC30/ItransformSelenium"
 		}
 	stage ('Build'){
 		echo " START Build stage"
