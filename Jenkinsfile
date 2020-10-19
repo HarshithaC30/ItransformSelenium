@@ -1,6 +1,10 @@
 pipeline {
     agent any
         stages {
+		
+		stage ('SCM checkout'){
+		git "https://github.com/HarshithaC30/ItransformSelenium"
+		}
             
           stage('Test ') {
             steps {
@@ -8,9 +12,7 @@ pipeline {
             }
         }
             
-        stage ('SCM checkout'){
-		git "https://github.com/HarshithaC30/ItransformSelenium"
-		}    
+            
             
     
         stage('sonar code quality check'){
